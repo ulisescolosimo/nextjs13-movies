@@ -25,7 +25,7 @@ const MovieList = ({ movies, setPage, page, topRated }) => {
     <div className="flex flex-col justify-center items-center">
       <div className="flex my-10 gap-5 justify-center">
         <div className="flex flex-wrap gap-5 justify-evenly w-full flex-2">
-          { searchedMovies?.length < 1 && search != null ? <section className="rounded-lg flex items-center h-full sm:p-16 dark:bg-gray-800 dark:text-gray-100">
+          { searchedMovies?.length < 1 && search != '' ? <section className="rounded-lg flex items-center h-full sm:p-16 dark:bg-gray-800 dark:text-gray-100">
 	<div className="container flex flex-col items-center justify-center px-5 mx-auto my-8 space-y-8 text-center sm:max-w-md">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-40 h-40 dark:text-gray-600">
 			<path fill="currentColor" d="M256,16C123.452,16,16,123.452,16,256S123.452,496,256,496,496,388.548,496,256,388.548,16,256,16ZM403.078,403.078a207.253,207.253,0,1,1,44.589-66.125A207.332,207.332,0,0,1,403.078,403.078Z"></path>

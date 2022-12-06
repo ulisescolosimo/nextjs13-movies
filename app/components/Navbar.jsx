@@ -36,16 +36,16 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link href={'/'} className="">Home</Link>
+                <Link href={'/'} className="font-medium">Home</Link>
               </li>
               <li>
-                <Link href={'/movies'} className="">Movies</Link>
+                <Link href={'/movies'} className="font-medium">Movies</Link>
               </li>
               <li>
-                <a className="">Pricing</a>
+                <a className="font-medium">Pricing</a>
               </li>
               <li>
-                <a className="">About us</a>
+                <a className="font-medium">About us</a>
               </li>
             </ul>
           </div>
@@ -54,16 +54,16 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-2">
             <li>
-              <Link href={'/'} className="rounded-lg">Home</Link>
+              <Link href={'/'} className="rounded-lg font-medium">Home</Link>
             </li>
             <li>
-              <Link href={'/movies'} className="rounded-lg">Movies</Link>
+              <Link href={'/movies'} className="rounded-lg font-medium">Movies</Link>
             </li>
             <li>
-              <a className="rounded-lg">Pricing</a>
+              <a className="rounded-lg font-medium">Pricing</a>
             </li>
             <li>
-              <a className="rounded-lg">About us</a>
+              <a className="rounded-lg font-medium">About us</a>
             </li>
           </ul>
         </div>
@@ -120,7 +120,6 @@ const Navbar = () => {
                 <li>
                   <a className="justify-between">
                     Profile
-                    <span className="badge">New</span>
                   </a>
                 </li>
                 <li>
@@ -136,12 +135,12 @@ const Navbar = () => {
           <div className="flex gap-2">
             <button
               onClick={()=> signIn('github')}
-              className="px-4 py-2 text-xs sm:text-lg rounded-md flex justify-center items-center gap-2 dark:bg-yellow-500 dark:text-gray-900"
+              className="px-4 py-2 font-medium text-xs sm:text-lg rounded-md flex justify-center items-center gap-2 dark:bg-yellow-500 dark:text-gray-900"
             >
               Sign in
               <BsGithub size={20} />
             </button>
-            <button onClick={()=> signIn('google')} className="px-4 sm:text-lg text-xs flex justify-center items-center gap-2 py-2 rounded-md bg-white text-black">
+            <button onClick={()=> signIn('google')} className="px-4 font-medium sm:text-lg text-xs flex justify-center items-center gap-2 py-2 rounded-md bg-white text-black">
               Sign in
               <FcGoogle size={20} />
             </button>
